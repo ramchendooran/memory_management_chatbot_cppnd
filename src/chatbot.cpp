@@ -50,25 +50,25 @@ ChatBot::ChatBot(const ChatBot& source)
     _image = new wxBitmap();
     *_image = *source._image;
 
-    if (source._chatLogic != nullptr)
-    {   
-        _chatLogic = new ChatLogic;
-        *_chatLogic = *source._chatLogic;
-    }
-    else
-    {
-        _chatLogic = nullptr;
-    }
+    // if (source._chatLogic != nullptr)
+    // {   
+    //     _chatLogic = new ChatLogic;
+    //     *_chatLogic = *source._chatLogic;
+    // }
+    // else
+    // {
+    //     _chatLogic = nullptr;
+    // }
     
-    if (source._rootNode != nullptr)
-    {   
-        _rootNode = new GraphNode(source._rootNode->GetID());
-        *_rootNode = *source._rootNode;
-    }
-    else
-    {
-        _rootNode = nullptr;
-    }
+    // if (source._rootNode != nullptr)
+    // {   
+    //     _rootNode = new GraphNode(source._rootNode->GetID());
+    //     *_rootNode = *source._rootNode;
+    // }
+    // else
+    // {
+    //     _rootNode = nullptr;
+    // }
 
     std::cout << "\n ChatBot Copy Constructor";
 
@@ -88,25 +88,25 @@ ChatBot& ChatBot::operator=(const ChatBot& source)
     _image = new wxBitmap();
     *_image = *source._image;
 
-    if (source._chatLogic != nullptr)
-    {   
-        _chatLogic = new ChatLogic;
-        *_chatLogic = *source._chatLogic;
-    }
-    else
-    {
-        _chatLogic = nullptr;
-    }
+    // if (source._chatLogic != nullptr)
+    // {   
+    //     _chatLogic = new ChatLogic;
+    //     *_chatLogic = *source._chatLogic;
+    // }
+    // else
+    // {
+    //     _chatLogic = nullptr;
+    // }
     
-    if (source._rootNode != nullptr)
-    {   
-        _rootNode = new GraphNode(source._rootNode->GetID());
-        *_rootNode = *source._rootNode;
-    }
-    else
-    {
-        _rootNode = nullptr;
-    }
+    // if (source._rootNode != nullptr)
+    // {   
+    //     _rootNode = new GraphNode(source._rootNode->GetID());
+    //     *_rootNode = *source._rootNode;
+    // }
+    // else
+    // {
+    //     _rootNode = nullptr;
+    // }
 
     std::cout << "\n ChatBot Copy Assignment Operator";
 
